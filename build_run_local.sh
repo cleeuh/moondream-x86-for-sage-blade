@@ -1,0 +1,1 @@
+sudo docker build --platform linux/amd64 -t tmp/waggle_amd64 --load . && time sudo docker run --gpus all --platform linux/amd64 tmp/waggle_amd64 --caption
