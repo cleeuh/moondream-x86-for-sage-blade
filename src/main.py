@@ -1,7 +1,5 @@
 import os
 
-# MOONDREAM_MODEL_DATA_DIR = "../huggingface"
-# MOONDREAM_MODEL_DATA_DIR = "../moondream2_complete"
 MOONDREAM_MODEL_DATA_DIR = "../huggingface"
 os.environ["HF_HUB_OFFLINE"] = "1"
 os.environ["HF_HOME"] = MOONDREAM_MODEL_DATA_DIR
@@ -34,16 +32,11 @@ test_gpu()
 
 
 model = AutoModelForCausalLM.from_pretrained(
-    # pretrained_model_name_or_path=MOONDREAM_MODEL_DATA_DIR,
-    # cache_dir=MOONDREAM_MODEL_DATA_DIR,
-
     "vikhyatk/moondream2",
     revision="2025-04-14",
-    # # "../moondream2_complete",
 
     trust_remote_code=True,
     local_files_only=True,
-    # Uncomment to run on GPU.
     device_map={"": "cuda"}
 )
 
