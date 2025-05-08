@@ -7,3 +7,4 @@ accelerate==1.6.0
 einops==0.7.0
 pyvips-binary==8.16.0
 pyvips==2.2.3
+numpy==1.26.0
