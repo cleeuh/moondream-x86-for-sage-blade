@@ -1,4 +1,4 @@
-name: "moondream-2"
+name: "moondream-2-x86"
 version: "0.1.0"
 description: "Moondream 2b with GPU inferencing for Sage Blade Nodes (compile pytorch 2.7 for cuda 116)"
 keywords: "llm"
